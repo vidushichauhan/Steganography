@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tfaudio</title>
+</head>
+<body style="background-color: #ccffcc;">
+<form action="/tfaudiocode" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    <center><h1>What file you want to hide?</h1></center>
+    <center><input type="file" name='file1'></center>
+    <br>
+    <br>
+    <center><h1>what file you want to hide the data in?</h1></center>
+    {%csrf_token%}
+    <center><input type="file" name='file2'></center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><button type="submit">Upload file</button></center>
+</form>
+
+</body>
+</html>

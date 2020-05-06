@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>taudio</title>
+</head>
+<body style="background-color: #ccffcc;">
+<form action="/t1audio" method="post" enctype="multipart/form-data">
+    <center><h1>what text you want to hide? write below in textarea:</h1></center>
+    <br>
+    <center><textarea name="textname" style="margin: 0px; width: 747px; height: 187px;"></textarea></center>
+    {%csrf_token%}
+    <br>
+    <br>
+    <center><input type="file" id="file4" name="file4"></center>
+    <br>
+    <center><button class="button" type="submit" style="width=400px,height=200" >submit</button></center>
+</form>
+</body>
+</html>

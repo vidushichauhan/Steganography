@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tfimage</title>
+</head>
+<body style="background-color: #ccffcc;">
+<form action="/tfimagecode" method="POST" enctype="multipart/form-data">
+    <h2>WHICH TEXTFILE YOU WANT TO HIDE SELECT BELOW:</h2>
+    {%csrf_token%}
+    <center><input type="file" name='files1'></center>
+    <br>
+    <br>
+    <h2>WHICH IMAGE YOU WANT THE TEXT FILE TO HIDE IN:</h2>
+    {%csrf_token%}
+    <center><input type="file" name='files2'></center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><button type="submit">Upload file</button></center>
+</form>
+
+
+</body>
+</html>

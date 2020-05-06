@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detextfile</title>
+    <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML =
+
+    }
+  </script>
+</head>
+<body style="background-color: #ccffcc;">
+<form action="/detextfile" method="post" enctype="multipart/form-data">
+    <center><h1>Put the container or the text file to decrypt</h1></center>
+    <br>
+     {%csrf_token%}
+    <center><input type="file" id="file15" name="file5"></center>
+    <br>
+
+
+    <center><h1>hidden textfile is:</h1></center>
+    <br>
+    <input type="submit" onclick="showInput();"><br/>
+    <center><label>Your input: </label></center>
+    <center><p><span id='display'></span></p></center>
+
+    <br>
+
+</form>
+</body>
+</html>

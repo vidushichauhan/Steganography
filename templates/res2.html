@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Audio Steganography</title>
+     <script language="javascript">
+function checkOnly(stayChecked)
+  {
+  with(document.myForm)
+    {
+    for(i = 0; i < elements.length; i++)
+      {
+      if(elements[i].checked == true && elements[i].name != stayChecked.name)
+        {
+        elements[i].checked = false;
+        }
+      }
+    }
+  }
+</script>
+</head>
+<style>
+    .button3 {background-color: #008080;
+              font-size: 20px;
+              color:white;
+              }
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body style="background-color: #ccffcc;">
+
+<div class="w3-container w3-teal">
+    <center><h1>AUDIO STEGANOGRAPHY</h1></center>
+</div>
+
+<div class="w3-container">
+    <form name="myForm" action="/taudio" method="get" >
+        <center><h1>FOR ENCODING</h1></center>
+  <p>IN WHICH FORM THE TEXT IS PRESENT:</p>
+    <input type="checkbox" name="texts" onclick="checkOnly(this)" > Text <br>
+    <br>
+  <input type="checkbox" name="textf" onclick="checkOnly(this)" > Text Files<br>
+    <br>
+        <center><h1>FOR DECODING</h1></center>
+        <p>IN WHICH FORM THE TEXT IS PRESENT:</p>
+    <input type="checkbox" name="texts1" onclick="checkOnly(this)" > Text <br>
+    <br>
+  <input type="checkbox" name="textfile2" onclick="checkOnly(this)" > Text Files<br>
+    <br>
+
+    <center><button class="button3" >Submit</button></center>
+    </form>
+</div>
+<br>
+<br>
+
+<footer class="w3-container w3-teal">
+    <center><h5>Steganography Major Project</h5></center>
+</footer>
+<br>
+</body>
+</html>
